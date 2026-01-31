@@ -1,0 +1,25 @@
+<!-- Problem Statement 1: Create Student List Using DOM Manipulation -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+<script>
+    const c=document.getElementById("container")
+    const u=document.createElement("ul")
+    const s=[["Rashmi_Mam",99],["Ankit",1],["Neha",92]]
+    s.forEach(i=>{
+            let l=document.createElement("li")
+            l.innerText=i[0]+" - "+i[1]
+            l.style.backgroundColor="lightblue"
+            u.appendChild(l)
+            })
+    c.appendChild(u)
+</script>
+
+</body>
+</html>
